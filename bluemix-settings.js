@@ -23,6 +23,8 @@ var appEnv = cfenv.getAppEnv();
 var VCAP_APPLICATION = JSON.parse(process.env.VCAP_APPLICATION);
 var VCAP_SERVICES = JSON.parse(process.env.VCAP_SERVICES);
 
+var diretorio = "https://github.com/DaviGuanabara/natiar-1482493493006/blob/master/bluemix-settings.js";
+
 var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
     mqttReconnectTime: 15000,
@@ -48,7 +50,7 @@ var settings = module.exports = {
     //httpAdminAuth: {user:"user",pass:"ee11cbb19052e40b07aac0ca060c23ee"},
     
     // Serve up the welcome page
-    var diretorio = "https://github.com/DaviGuanabara/natiar-1482493493006/blob/master/bluemix-settings.js";
+    
     httpStatic: path.join(diretorio,"public"),
 
     functionGlobalContext: { },
