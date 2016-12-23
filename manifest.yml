@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: natiar
+  host: natiar
+  disk_quota: 1024M
+  services:
+  - Plataforma Internet das Coisas-9r
+  - natiar-cloudantNoSQLDB
+  - Conversation-ii
+  - Twilio-7j
+  env:
+    NODE_RED_USERNAME: davi
+    NODE_RED_PASSWORD: '12345678'
