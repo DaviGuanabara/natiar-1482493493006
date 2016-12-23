@@ -48,7 +48,8 @@ var settings = module.exports = {
     //httpAdminAuth: {user:"user",pass:"ee11cbb19052e40b07aac0ca060c23ee"},
     
     // Serve up the welcome page
-    httpStatic: path.join(__dirname+"/simple","public"),
+    var diretorio = "https://github.com/DaviGuanabara/natiar-1482493493006/blob/master/bluemix-settings.js";
+    httpStatic: path.join(diretorio,"public"),
 
     functionGlobalContext: { },
 
